@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body{
+    font-family: 'EB Garamond' , sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+}
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(163,  95,  227)
+    padding 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    Z-index: 1000;
+
+}
+
+
+}
+
+.navigation ul{
+
+    list-style: none;
+
+}
+
+.header .navigation ul li {
+    float: left;
+    position: relative;
+
+
+}
+.header .navigation ul li a{
+    font-size: 18px;
+    color: rgb(233, 65, 177);
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all 0.2s ease;
+
+}
+.header .navigation ul li a:hover{
+    background-color: #4df6ad;
+
+
+}
+.header .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+
+
+}
+
+.header .navigation ul li ul li a{
+    font: 15px;
+    text-transform: capitalize;
+
+
+}
+.header .navigation ul li ul li ul {
+    position: absolute;
+    top: 0;
+    right: 300px;
+
+
+}
+.header .navigation ul li ul li {
+width: 100%;
+
+
+}
+.header .navigation ul li:hover> ul {
+    display: initial;
+
+
+}
+
+.header .logo{
+    font-size: 105px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    div text-align: right;
+
+}
+
+.header .img {
+    top: 1000px;
+
+}
+
+#toggle,
+.header label{
+    display: none;
+    cursor: pointer;
+}
+    .menu{
+    width: 45px;
+    height: 35px;
+    }
+
+
+    @media(max-width:950px) {
+        .header label {
+        display: initial;
+        }
+        .header{
+        padding: 20px 10%;
+        }
+        .header .navigation{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: rgba(234, 69, 182, 0.7);
+            display: none;
+            
+        }
+        .header.navigation ul li{
+            width: 100%;
+            }
+            .header.navigation ul li a {
+
+                padding: 8px 30px 8px 10%;
+            }
+            .header.navigation ul li ul{
+                position: relative;
+                width: 100%;
+                left: 0;
+                }
+                
+                .header.navigation ul li ul li{
+                background-color: rgba(124, 229, 233, 0.805);
+                
+                }
+                .header.navigation ul li ul li ul{
+                    position: relative;
+                    width: 100%;
+                    left: 0;
+                    }
+
+                    #toggle:checked ~ .navigation {
+                        display: block;
+                        }
+                        
+                        }
+                        .hero {
+                        min-height: 100vh;
+                        background-image:url(&quot;img/hero.jpg&quot;);
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        
+                        font-size: 25px;
+                        color: #fff;
+                        padding: 35px;
+                        text-align: center center;
+                        }
